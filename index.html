@@ -1,58 +1,137 @@
 <!DOCTYPE html>
-
 <html lang="en">
+<meta charset="UTF-8">
 
+<html>
 <head>
-
-    <meta charset="UTF-8">
-
-    <title>Núria Serra</title>
-
+    <title>Corriculum</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/favicon.ico" type="image/ico" sizes="16x16">
 
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200&display=swap" rel="stylesheet">
 
 </head>
 
+<!--Estils css-->
 <style>
-
-    h1 {
-
-        font-family: 'Abril Fatface', cursive;
-
-        font-size: 50px;
-
+ 
+.clearfix {
+        overflow: auto;
+    }
+    .container {
+        width: 75%;
+        margin: auto;
+        box-sizing: border-box;
         text-align: center;
-
+    }
+    .container-display {
+        position: relative;
+        width: 98%;
+        /*indicador*/
+        margin: 5px;
+        border: 1px dashed green;
+    }
+    .container-text {
+        text-align: left;
+        /*indicador*/
+        margin: 5px;
+        border: 1px dashed blue;
+    }
+    .boton-slider {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+    }
+    .boton-slider:hover {
+        width: 30px;
+        height: 30px;
+        background-color: ghostwhite;
+    }
+    .fletxaDreta-slider {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        */
+    }
+    .fletxaEsquerra-slider {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%, -50%);
     }
 
-    h2 {
-
-        font-family: 'Manrope', sans-serif;
-
-        text-align: center;
-
+    .mySlides {
+        display: none;
     }
-
 </style>
 
 <body>
+              <h2>Núria Serra Garcia</h2>
+        
 
-    <center>
+        <div class="flex">
 
-    <h1>Núria Serra</h1>
+         <div class="fuxia">
+                   
 
-    <img src="imatges/fenic.jpg" alt="logo">
+             <p class="space">Estudiant en el CFGS Animacions 3D, Jocs i Entorns Interactius he apres a iluminar, animar i texturitzar amb el Maya2020.</p>
+             <p class="space">Sóc capaç de desenvolupar continguts en Processing i en el futur m'agradaria a profundir en la generació de continguts 2D i 3D amb Unity</p>
+                 
+        
+       
+          
+         <div class="container-display">
+              <button class="button" onclick="plusDivs(-1)">&#10094;</button>
+             <button class="button" onclick="plusDivs(1)">&#10095; </button>
+        <img class="mySlides" src="imgs/Activitat%20Unity.png"style="width:100%">
+        <img class="mySlides" src="imgs/Activitat%20Iluminacio.jpeg" style="width:100%">
+                     <img class="mySlides" src="imgs/mapa%20unity.png" style="width:100%">
 
-    <h2>Diseny gràfic,iluminació i ilustració</h2>
+       
+        
+    </div>
+    <!--Script JS-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+                     <br>
+   <a href="mailto:https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">nuria.serra.garcia@uvic.cat</a>   
+            <a href="https://www.behance.net/nriaserra1"  title="behance">
+	<img alt="behance" src="imgs/marca%20behancse.png" width="66" height="66" alt="behance"/>
+</a>  
+             	<img alt="Gmail" src="imgs/Gmail-Logo.png" width="66" height="66" alt="Gmail"/>
+
+    </div>
+        
+ 
     
-    <h3></h3>
-<h3 per entrar a la pàgina web, clica el nom de l aplicació.></h3>
+            
+        
 
-        <a href="https://www.behance.net/nriaserra"><img src="imatges/be.png" alt="Behance" width="50px" align="center">
-        </a>
-    </center>
-
+            
+       
+            </div> 
 </body>
-</html>
-
+       </html>
