@@ -219,33 +219,3 @@ float: right;
     margin: 50 50;
    
 }
-.button {
-     color: #fff;
-	padding: 15px;
-	margin: 5%;	
-	background-color: skyblue;
-    display: flex;
- display: flex;
- justify-content: center;
- align-items: center;
- border: 2px solid black;
-    margin-top: 10px;
-display: block inline;
- text-indent: 0;
-    top: 0;
- transition-duration: .5s;
- }
-.button:hover {
-    color: #fff;
-	padding: 15px;
-	margin: 5%;	
-	background-color: skyblue;
-    display: flex;
- justify-content: center;
- align-items: center;
- margin: 10px;
- background-color: blue;
- border: 2px solid black;
-  text-indent: 100px;  
- transition-duration: .5s;
-}
